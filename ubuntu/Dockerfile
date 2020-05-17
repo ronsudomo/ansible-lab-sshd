@@ -4,7 +4,7 @@ ARG ROOT_PASSWORD=ansiblelab
 
 RUN apt-get update && \
     apt-get install -y \
-        openssh-server && \
+        openssh-server \
         iputils-ping
 
 RUN mkdir /var/run/sshd
